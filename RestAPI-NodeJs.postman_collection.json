@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "ca1c3ae9-7ff3-4aee-b3da-aa5ac9ebef35",
+		"name": "RestAPI-NodeJs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12271631"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Ankit\",\r\n    \"password\" : \"Ankit@1234\",\r\n    \"Designation\" : \"Manager\",\r\n    \"salary\": 25000 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{hostname}}/users/register"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_code\" : 1103,\r\n    \"password\" : \"Mohit@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{hostname}}/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "user-profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImN1c3RvbWVyX2NvZGUiOjExMDMsIm5hbWUiOiJNb2hpZHR0dHRmIn0sImlhdCI6MTY5NDY4OTA0NiwiZXhwIjoxNjk0NjkyNjQ2fQ.By0gndF6iTg1l_ZYA2TClxZW555_3c2L52GmyRoOXAo",
+						"type": "text"
+					}
+				],
+				"url": "{{hostname}}/users/user-profile"
+			},
+			"response": []
+		},
+		{
+			"name": "add-attendance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImN1c3RvbWVyX2NvZGUiOjExMDMsIm5hbWUiOiJNb2hpZHR0dHRmIn0sImlhdCI6MTY5NDY4OTA0NiwiZXhwIjoxNjk0NjkyNjQ2fQ.By0gndF6iTg1l_ZYA2TClxZW555_3c2L52GmyRoOXAo ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_code\" : 1103,\r\n    \"attendance_date\" : \"2023-09-14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{hostname}}/users/add-attendance"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-user-account",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImN1c3RvbWVyX2NvZGUiOjExMDMsIm5hbWUiOiJNb2hpZHR0dHRmIn0sImlhdCI6MTY5NDY5NzE4MywiZXhwIjoxNjk0NzAwNzgzfQ.iy66BiQ4WKCz1v-hJvXtwiZXGoiPoWOVfhNl0fiDlaE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{hostname}}/users/delete-user-account?customer_code=1102",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"users",
+						"delete-user-account"
+					],
+					"query": [
+						{
+							"key": "customer_code",
+							"value": "1102"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "report",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImN1c3RvbWVyX2NvZGUiOjExMDMsIm5hbWUiOiJNb2hpZHR0dHRmIn0sImlhdCI6MTY5NDY5MjY3OCwiZXhwIjoxNjk0Njk2Mjc4fQ._0PN4qHBU7FckSpLI7PX3Wd5EQfadpIKzRWLIrg2XWg",
+						"type": "text"
+					}
+				],
+				"url": "{{hostname}}/users/report"
+			},
+			"response": []
+		}
+	]
+}
