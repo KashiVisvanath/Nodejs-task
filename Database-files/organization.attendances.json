@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "6502f078a95d28388b22ac6b"
+  },
+  "customer_code": 1103,
+  "attendance_date": {
+    "$date": "2023-09-12T00:00:00.000Z"
+  },
+  "created_date": {
+    "$date": "2023-09-14T11:36:55.494Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6502f07aa95d28388b22ac6e"
+  },
+  "customer_code": 1103,
+  "attendance_date": {
+    "$date": "2023-09-14T00:00:00.000Z"
+  },
+  "created_date": {
+    "$date": "2023-09-14T11:36:55.494Z"
+  },
+  "__v": 0
+}]

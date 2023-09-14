@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "6502c0860f3270c69912f2d8"
+  },
+  "name": "Mohit",
+  "password": "$2a$10$Pw5u9H/D8KXL0.fj5VxY2ex0Df4w1bYsDlrRqfrJZlp4nLZIza/f2",
+  "designation": "Manager",
+  "basic_salary": "25000",
+  "date": {
+    "$date": "2023-09-14T08:12:37.043Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6502c09c0f3270c69912f2df"
+  },
+  "name": "Mohidt",
+  "password": "$2a$10$/obWUmoIuF34Xdu6u4MUXu.05TMrKP.l3nv4cYNrUN0qBePQQ60dy",
+  "designation": "Manager",
+  "basic_salary": "25000",
+  "date": {
+    "$date": "2023-09-14T08:12:37.043Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6502d2b547db4dcf1b351d82"
+  },
+  "name": "Mohidtt",
+  "customer_code": 0,
+  "password": "$2a$10$ja6bYcOGZxPOVyTs8yO2LOmwzanZBA1rRre3z9x2lZj5.CT9ha3Yi",
+  "designation": "Manager",
+  "basic_salary": "25000",
+  "date": {
+    "$date": "2023-09-14T09:30:14.566Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6502dd0590e7e3e429031147"
+  },
+  "name": "Mohidttttf",
+  "password": "$2a$10$OUZfWNnu5feYPs8f4Wlj8u87vT3a8hD43q7O2zs4vqazzfvA2wFKm",
+  "designation": "Manager",
+  "basic_salary": "25000",
+  "date": {
+    "$date": "2023-09-14T10:12:14.856Z"
+  },
+  "customer_code": 1103,
+  "__v": 0
+}]
